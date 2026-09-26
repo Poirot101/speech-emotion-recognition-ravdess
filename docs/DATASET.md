@@ -37,7 +37,7 @@ the "dogs" statement, first repetition, actor 12 (female).
 
 Field **3** is the training target. Field **7** is the speaker identity, and this
 project treats it as a first-class output of the loader (`groups`) because it is
-needed for a proper train/test split, see [LEARNING_NOTES.md](LEARNING_NOTES.md#2-the-split-that-changes-the-answer).
+needed for a proper train/test split, see [LEARNING_NOTES.md](LEARNING_NOTES.md#3-the-split-that-changes-the-answer).
 
 ## Class balance
 
