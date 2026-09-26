@@ -1,0 +1,92 @@
+{
+  "classes": [
+    "calm",
+    "happy",
+    "fearful",
+    "disgust"
+  ],
+  "n_clips": 768,
+  "random_state": 9,
+  "results": [
+    {
+      "variant": "MFCC + chroma + mel (full)",
+      "n_features": 180,
+      "scaler": true,
+      "random_accuracy": 0.7760416666666666,
+      "random_macro_f1": 0.7752485609628467,
+      "speaker_accuracy": 0.59375,
+      "speaker_macro_f1": 0.5920169012274276,
+      "gap_pp": 18.229166666666664
+    },
+    {
+      "variant": "MFCC only",
+      "n_features": 40,
+      "scaler": true,
+      "random_accuracy": 0.7604166666666666,
+      "random_macro_f1": 0.7578791364752158,
+      "speaker_accuracy": 0.59375,
+      "speaker_macro_f1": 0.5922660761574698,
+      "gap_pp": 16.666666666666664
+    },
+    {
+      "variant": "Chroma only",
+      "n_features": 12,
+      "scaler": true,
+      "random_accuracy": 0.375,
+      "random_macro_f1": 0.37081541818938,
+      "speaker_accuracy": 0.328125,
+      "speaker_macro_f1": 0.3276540927143337,
+      "gap_pp": 4.6875
+    },
+    {
+      "variant": "Mel only",
+      "n_features": 128,
+      "scaler": true,
+      "random_accuracy": 0.6197916666666666,
+      "random_macro_f1": 0.6158241510964284,
+      "speaker_accuracy": 0.5104166666666666,
+      "speaker_macro_f1": 0.5045914165884674,
+      "gap_pp": 10.9375
+    },
+    {
+      "variant": "MFCC + chroma",
+      "n_features": 52,
+      "scaler": true,
+      "random_accuracy": 0.7760416666666666,
+      "random_macro_f1": 0.7729262578817936,
+      "speaker_accuracy": 0.5885416666666666,
+      "speaker_macro_f1": 0.5867705980014709,
+      "gap_pp": 18.75
+    },
+    {
+      "variant": "MFCC + mel",
+      "n_features": 168,
+      "scaler": true,
+      "random_accuracy": 0.765625,
+      "random_macro_f1": 0.7654977954081186,
+      "speaker_accuracy": 0.5520833333333334,
+      "speaker_macro_f1": 0.5535707636597228,
+      "gap_pp": 21.354166666666664
+    },
+    {
+      "variant": "Chroma + mel",
+      "n_features": 140,
+      "scaler": true,
+      "random_accuracy": 0.6458333333333334,
+      "random_macro_f1": 0.6465730791607578,
+      "speaker_accuracy": 0.4635416666666667,
+      "speaker_macro_f1": 0.45497315833453533,
+      "gap_pp": 18.229166666666668
+    },
+    {
+      "variant": "Full, no StandardScaler",
+      "n_features": 180,
+      "scaler": false,
+      "random_accuracy": 0.7135416666666666,
+      "random_macro_f1": 0.7124891237794463,
+      "speaker_accuracy": 0.5052083333333334,
+      "speaker_macro_f1": 0.49738352257994595,
+      "gap_pp": 20.833333333333325
+    }
+  ]
+}

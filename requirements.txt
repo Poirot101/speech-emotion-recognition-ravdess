@@ -1,0 +1,16 @@
+# Core pipeline
+librosa>=1.0.0
+soundfile>=0.13
+numpy>=2.0
+scikit-learn>=1.5
+joblib>=1.4
+
+# Figures and the notebook
+matplotlib>=3.9
+pandas>=2.2
+
+# Dev / tests
+pytest>=8.0
+
+# Interactive app (optional): streamlit run app/streamlit_app.py
+streamlit>=1.63

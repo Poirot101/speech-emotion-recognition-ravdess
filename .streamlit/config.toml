@@ -1,0 +1,17 @@
+# Theme for app/streamlit_app.py. Streamlit reads this when launched from the repo root.
+[theme]
+base = "light"
+primaryColor = "#2B3A67"
+backgroundColor = "#F2F4F7"
+secondaryBackgroundColor = "#E4E8EE"
+textColor = "#1B2230"
+borderColor = "#D3D9E2"
+baseRadius = "0.3rem"
+font = "Atkinson Hyperlegible:https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap, sans-serif"
+headingFont = "Bricolage Grotesque:https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&display=swap, sans-serif"
+
+[theme.sidebar]
+backgroundColor = "#E8ECF1"
+
+[browser]
+gatherUsageStats = false

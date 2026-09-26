@@ -1,0 +1,554 @@
+{
+  "held_out_actors": [
+    4,
+    5,
+    6,
+    8,
+    10,
+    19
+  ],
+  "selection": "GroupKFold(6) on training actors",
+  "candidates": [
+    {
+      "classifier": "mlp",
+      "pooling": "mean",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.609375,
+      "inner_cv_std": 0.07334941032735283,
+      "fold_scores": [
+        0.6041666666666666,
+        0.5104166666666666,
+        0.5416666666666666,
+        0.6354166666666666,
+        0.7395833333333334,
+        0.625
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "mean",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.5885416666666666,
+      "inner_cv_std": 0.06981239327389964,
+      "fold_scores": [
+        0.6354166666666666,
+        0.46875,
+        0.5208333333333334,
+        0.6145833333333334,
+        0.6666666666666666,
+        0.625
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "mean",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.5850694444444444,
+      "inner_cv_std": 0.055256355773748426,
+      "fold_scores": [
+        0.6354166666666666,
+        0.4895833333333333,
+        0.5520833333333334,
+        0.6041666666666666,
+        0.65625,
+        0.5729166666666666
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "mean",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.5972222222222222,
+      "inner_cv_std": 0.05598790102985106,
+      "fold_scores": [
+        0.6770833333333334,
+        0.5104166666666666,
+        0.6354166666666666,
+        0.5416666666666666,
+        0.6145833333333334,
+        0.6041666666666666
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "mean",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.578125,
+      "inner_cv_std": 0.03645833333333331,
+      "fold_scores": [
+        0.5833333333333334,
+        0.5208333333333334,
+        0.5729166666666666,
+        0.5520833333333334,
+        0.6354166666666666,
+        0.6041666666666666
+      ]
+    },
+    {
+      "classifier": "mlp",
+      "pooling": "mean",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6197916666666666,
+      "inner_cv_std": 0.03791723900666939,
+      "fold_scores": [
+        0.5729166666666666,
+        0.6458333333333334,
+        0.6354166666666666,
+        0.6145833333333334,
+        0.6770833333333334,
+        0.5729166666666666
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "mean",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.607638888888889,
+      "inner_cv_std": 0.04195502074164782,
+      "fold_scores": [
+        0.5625,
+        0.6041666666666666,
+        0.6875,
+        0.5625,
+        0.6145833333333334,
+        0.6145833333333334
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "mean",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6336805555555555,
+      "inner_cv_std": 0.04052992197891928,
+      "fold_scores": [
+        0.625,
+        0.6354166666666666,
+        0.6666666666666666,
+        0.5729166666666666,
+        0.6979166666666666,
+        0.6041666666666666
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "mean",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.638888888888889,
+      "inner_cv_std": 0.05434887445311988,
+      "fold_scores": [
+        0.75,
+        0.5833333333333334,
+        0.6458333333333334,
+        0.59375,
+        0.6354166666666666,
+        0.625
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "mean",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6597222222222222,
+      "inner_cv_std": 0.03787747262026291,
+      "fold_scores": [
+        0.6666666666666666,
+        0.6458333333333334,
+        0.7395833333333334,
+        0.625,
+        0.6458333333333334,
+        0.6354166666666666
+      ]
+    },
+    {
+      "classifier": "mlp",
+      "pooling": "mean",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.6423611111111112,
+      "inner_cv_std": 0.062403474845873025,
+      "fold_scores": [
+        0.7395833333333334,
+        0.5833333333333334,
+        0.59375,
+        0.5729166666666666,
+        0.6770833333333334,
+        0.6875
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "mean",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.6770833333333334,
+      "inner_cv_std": 0.07090478422452132,
+      "fold_scores": [
+        0.75,
+        0.5416666666666666,
+        0.7291666666666666,
+        0.6458333333333334,
+        0.7291666666666666,
+        0.6666666666666666
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "mean",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.6302083333333334,
+      "inner_cv_std": 0.045305515106596826,
+      "fold_scores": [
+        0.6979166666666666,
+        0.5625,
+        0.6458333333333334,
+        0.5833333333333334,
+        0.65625,
+        0.6354166666666666
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "mean",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.638888888888889,
+      "inner_cv_std": 0.10129133434593625,
+      "fold_scores": [
+        0.7395833333333334,
+        0.5,
+        0.6458333333333334,
+        0.6041666666666666,
+        0.7916666666666666,
+        0.5520833333333334
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "mean",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.6440972222222222,
+      "inner_cv_std": 0.04436434839993278,
+      "fold_scores": [
+        0.7083333333333334,
+        0.6041666666666666,
+        0.6666666666666666,
+        0.6458333333333334,
+        0.6666666666666666,
+        0.5729166666666666
+      ]
+    },
+    {
+      "classifier": "mlp",
+      "pooling": "meanstd",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.6597222222222222,
+      "inner_cv_std": 0.0687464926153588,
+      "fold_scores": [
+        0.65625,
+        0.6041666666666666,
+        0.5729166666666666,
+        0.6770833333333334,
+        0.7916666666666666,
+        0.65625
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "meanstd",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.6614583333333334,
+      "inner_cv_std": 0.0839279997588321,
+      "fold_scores": [
+        0.71875,
+        0.5416666666666666,
+        0.5729166666666666,
+        0.6458333333333334,
+        0.78125,
+        0.7083333333333334
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "meanstd",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.6475694444444444,
+      "inner_cv_std": 0.06461039606225139,
+      "fold_scores": [
+        0.71875,
+        0.5729166666666666,
+        0.625,
+        0.59375,
+        0.75,
+        0.625
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "meanstd",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.6180555555555555,
+      "inner_cv_std": 0.07233564811110993,
+      "fold_scores": [
+        0.71875,
+        0.5104166666666666,
+        0.6666666666666666,
+        0.5520833333333334,
+        0.6666666666666666,
+        0.59375
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "meanstd",
+      "normalization": "none",
+      "deployable": true,
+      "inner_cv_mean": 0.6249999999999999,
+      "inner_cv_std": 0.06909634979907082,
+      "fold_scores": [
+        0.7291666666666666,
+        0.5104166666666666,
+        0.65625,
+        0.59375,
+        0.6666666666666666,
+        0.59375
+      ]
+    },
+    {
+      "classifier": "mlp",
+      "pooling": "meanstd",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6927083333333331,
+      "inner_cv_std": 0.05268746842185247,
+      "fold_scores": [
+        0.6875,
+        0.6979166666666666,
+        0.6666666666666666,
+        0.6979166666666666,
+        0.7916666666666666,
+        0.6145833333333334
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "meanstd",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6649305555555556,
+      "inner_cv_std": 0.05117848254508222,
+      "fold_scores": [
+        0.7395833333333334,
+        0.6354166666666666,
+        0.6770833333333334,
+        0.6145833333333334,
+        0.71875,
+        0.6041666666666666
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "meanstd",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.673611111111111,
+      "inner_cv_std": 0.049835764216692086,
+      "fold_scores": [
+        0.71875,
+        0.65625,
+        0.65625,
+        0.625,
+        0.7604166666666666,
+        0.625
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "meanstd",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.6440972222222222,
+      "inner_cv_std": 0.07024280668105523,
+      "fold_scores": [
+        0.7604166666666666,
+        0.5729166666666666,
+        0.6770833333333334,
+        0.625,
+        0.6770833333333334,
+        0.5520833333333334
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "meanstd",
+      "normalization": "neutral",
+      "deployable": true,
+      "inner_cv_mean": 0.689236111111111,
+      "inner_cv_std": 0.04938007865738852,
+      "fold_scores": [
+        0.78125,
+        0.65625,
+        0.7083333333333334,
+        0.6666666666666666,
+        0.6979166666666666,
+        0.625
+      ]
+    },
+    {
+      "classifier": "mlp",
+      "pooling": "meanstd",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.720486111111111,
+      "inner_cv_std": 0.051530632221027176,
+      "fold_scores": [
+        0.7916666666666666,
+        0.6770833333333334,
+        0.6979166666666666,
+        0.6666666666666666,
+        0.7916666666666666,
+        0.6979166666666666
+      ]
+    },
+    {
+      "classifier": "svm",
+      "pooling": "meanstd",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.7100694444444443,
+      "inner_cv_std": 0.07781574594102421,
+      "fold_scores": [
+        0.8125,
+        0.6041666666666666,
+        0.6979166666666666,
+        0.6770833333333334,
+        0.8125,
+        0.65625
+      ]
+    },
+    {
+      "classifier": "logreg",
+      "pooling": "meanstd",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.734375,
+      "inner_cv_std": 0.0632907157415215,
+      "fold_scores": [
+        0.8125,
+        0.625,
+        0.7395833333333334,
+        0.6979166666666666,
+        0.8020833333333334,
+        0.7291666666666666
+      ]
+    },
+    {
+      "classifier": "random_forest",
+      "pooling": "meanstd",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.640625,
+      "inner_cv_std": 0.10464300809666416,
+      "fold_scores": [
+        0.7708333333333334,
+        0.5,
+        0.6041666666666666,
+        0.6770833333333334,
+        0.7604166666666666,
+        0.53125
+      ]
+    },
+    {
+      "classifier": "hist_gb",
+      "pooling": "meanstd",
+      "normalization": "oracle",
+      "deployable": false,
+      "inner_cv_mean": 0.7083333333333334,
+      "inner_cv_std": 0.058308526471342596,
+      "fold_scores": [
+        0.8229166666666666,
+        0.6354166666666666,
+        0.7083333333333334,
+        0.6666666666666666,
+        0.71875,
+        0.6979166666666666
+      ]
+    }
+  ],
+  "held_out": {
+    "baseline": {
+      "config": "mlp / mean / norm=none",
+      "inner_cv": 0.609375,
+      "held_out_accuracy": 0.59375,
+      "held_out_macro_f1": 0.5920169012274276
+    },
+    "best_deployable": {
+      "config": "mlp / meanstd / norm=neutral",
+      "inner_cv": 0.6927083333333331,
+      "held_out_accuracy": 0.6354166666666666,
+      "held_out_macro_f1": 0.6382546227319451
+    },
+    "oracle_upper_bound": {
+      "config": "logreg / meanstd / norm=oracle",
+      "inner_cv": 0.734375,
+      "held_out_accuracy": 0.6979166666666666,
+      "held_out_macro_f1": 0.6985877539143605
+    }
+  },
+  "mcnemar_baseline_vs_best_deployable": {
+    "baseline_only_correct": 25,
+    "best_only_correct": 33,
+    "p_value": 0.358143301806138
+  },
+  "speaker_bootstrap_accuracy_gain_95": [
+    -0.03125,
+    0.10416666666666663
+  ],
+  "best_deployable_seed_spread": {
+    "mean": 0.6171875000000001,
+    "std": 0.01402386668524612,
+    "min": 0.5885416666666666,
+    "max": 0.6354166666666666
+  },
+  "per_speaker_accuracy": {
+    "4": {
+      "baseline": 0.46875,
+      "best_deployable": 0.5625
+    },
+    "5": {
+      "baseline": 0.6875,
+      "best_deployable": 0.84375
+    },
+    "6": {
+      "baseline": 0.59375,
+      "best_deployable": 0.5625
+    },
+    "8": {
+      "baseline": 0.75,
+      "best_deployable": 0.8125
+    },
+    "10": {
+      "baseline": 0.40625,
+      "best_deployable": 0.46875
+    },
+    "19": {
+      "baseline": 0.65625,
+      "best_deployable": 0.5625
+    }
+  }
+}

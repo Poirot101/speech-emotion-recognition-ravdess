@@ -1,0 +1,21 @@
+# dataset, feature cache and trained models (regenerate them locally)
+data/
+models/
+
+# reports/ is committed on purpose so the numbers in docs/RESULTS.md can be
+# checked without downloading the dataset
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# misc
+.DS_Store
+.playwright-mcp/

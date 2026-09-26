@@ -1,0 +1,353 @@
+{
+  "protocol": {
+    "outer": "GroupKFold(6) over 24 actors",
+    "inner": "GroupKFold(5)",
+    "candidates": [
+      "mlp/mean/none",
+      "svm/mean/none",
+      "logreg/mean/none",
+      "random_forest/mean/none",
+      "hist_gb/mean/none",
+      "mlp/mean/neutral",
+      "svm/mean/neutral",
+      "logreg/mean/neutral",
+      "random_forest/mean/neutral",
+      "hist_gb/mean/neutral",
+      "mlp/meanstd/none",
+      "svm/meanstd/none",
+      "logreg/meanstd/none",
+      "random_forest/meanstd/none",
+      "hist_gb/meanstd/none",
+      "mlp/meanstd/neutral",
+      "svm/meanstd/neutral",
+      "logreg/meanstd/neutral",
+      "random_forest/meanstd/neutral",
+      "hist_gb/meanstd/neutral"
+    ],
+    "baseline": "mlp/mean/none",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "emotions": [
+      "calm",
+      "happy",
+      "fearful",
+      "disgust"
+    ],
+    "n_clips": 768
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "test_actors": [
+        6,
+        12,
+        18,
+        24
+      ],
+      "chosen": "hist_gb/meanstd/neutral",
+      "chosen_inner_cv": 0.6765625,
+      "baseline_inner_cv": 0.578125,
+      "baseline_outer": 0.684375,
+      "nested_outer": 0.7109375,
+      "top5_inner": [
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.6765625
+        },
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.659375
+        },
+        {
+          "config": "random_forest/mean/neutral",
+          "inner_cv": 0.653125
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.646875
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.6390625
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "test_actors": [
+        5,
+        11,
+        17,
+        23
+      ],
+      "chosen": "logreg/meanstd/neutral",
+      "chosen_inner_cv": 0.65625,
+      "baseline_inner_cv": 0.5765625,
+      "baseline_outer": 0.5484375,
+      "nested_outer": 0.734375,
+      "top5_inner": [
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.65625
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.6484375
+        },
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.646875
+        },
+        {
+          "config": "logreg/meanstd/none",
+          "inner_cv": 0.640625
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.6296875
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "test_actors": [
+        4,
+        10,
+        16,
+        22
+      ],
+      "chosen": "logreg/meanstd/neutral",
+      "chosen_inner_cv": 0.684375,
+      "baseline_inner_cv": 0.6140625,
+      "baseline_outer": 0.4453125,
+      "nested_outer": 0.6328125,
+      "top5_inner": [
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.684375
+        },
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.6640625
+        },
+        {
+          "config": "logreg/meanstd/none",
+          "inner_cv": 0.6609375
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.659375
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.6578125
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "test_actors": [
+        3,
+        9,
+        15,
+        21
+      ],
+      "chosen": "hist_gb/meanstd/neutral",
+      "chosen_inner_cv": 0.68125,
+      "baseline_inner_cv": 0.578125,
+      "baseline_outer": 0.55625,
+      "nested_outer": 0.6328125,
+      "top5_inner": [
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.68125
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.6625
+        },
+        {
+          "config": "svm/meanstd/none",
+          "inner_cv": 0.6578125
+        },
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.6578125
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.6484375
+        }
+      ]
+    },
+    {
+      "fold": 5,
+      "test_actors": [
+        2,
+        8,
+        14,
+        20
+      ],
+      "chosen": "logreg/meanstd/neutral",
+      "chosen_inner_cv": 0.665625,
+      "baseline_inner_cv": 0.5609375,
+      "baseline_outer": 0.759375,
+      "nested_outer": 0.796875,
+      "top5_inner": [
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.665625
+        },
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.665625
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.6421875
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.634375
+        },
+        {
+          "config": "random_forest/meanstd/neutral",
+          "inner_cv": 0.60625
+        }
+      ]
+    },
+    {
+      "fold": 6,
+      "test_actors": [
+        1,
+        7,
+        13,
+        19
+      ],
+      "chosen": "logreg/meanstd/neutral",
+      "chosen_inner_cv": 0.690625,
+      "baseline_inner_cv": 0.578125,
+      "baseline_outer": 0.6390625,
+      "nested_outer": 0.6484375,
+      "top5_inner": [
+        {
+          "config": "logreg/meanstd/neutral",
+          "inner_cv": 0.690625
+        },
+        {
+          "config": "svm/meanstd/neutral",
+          "inner_cv": 0.6890625
+        },
+        {
+          "config": "hist_gb/meanstd/neutral",
+          "inner_cv": 0.6703125
+        },
+        {
+          "config": "mlp/meanstd/neutral",
+          "inner_cv": 0.6609375
+        },
+        {
+          "config": "random_forest/meanstd/neutral",
+          "inner_cv": 0.6375
+        }
+      ]
+    }
+  ],
+  "chosen_configuration_counts": {
+    "hist_gb/meanstd/neutral": 2,
+    "logreg/meanstd/neutral": 4
+  },
+  "overall": {
+    "baseline_accuracy_per_seed": [
+      0.6080729166666666,
+      0.6145833333333334,
+      0.6106770833333334,
+      0.5989583333333334,
+      0.5950520833333334
+    ],
+    "nested_accuracy_per_seed": [
+      0.6927083333333334,
+      0.6927083333333334,
+      0.6927083333333334,
+      0.6927083333333334,
+      0.6927083333333334
+    ],
+    "baseline_mean": 0.6054687500000001,
+    "baseline_std": 0.007319515272164159,
+    "nested_mean": 0.6927083333333334,
+    "nested_std": 0.0
+  },
+  "mcnemar_per_seed": [
+    {
+      "seed": 0,
+      "baseline_only": 97,
+      "nested_only": 162,
+      "p_value": 6.438009235702207e-05
+    },
+    {
+      "seed": 1,
+      "baseline_only": 92,
+      "nested_only": 152,
+      "p_value": 0.0001478978044295399
+    },
+    {
+      "seed": 2,
+      "baseline_only": 91,
+      "nested_only": 154,
+      "p_value": 6.853975994307463e-05
+    },
+    {
+      "seed": 3,
+      "baseline_only": 86,
+      "nested_only": 158,
+      "p_value": 4.721328752156598e-06
+    },
+    {
+      "seed": 4,
+      "baseline_only": 85,
+      "nested_only": 160,
+      "p_value": 1.9053976149343633e-06
+    }
+  ],
+  "speaker_bootstrap_gain_95": [
+    0.041406250000000006,
+    0.13697916666666668
+  ],
+  "per_speaker_gain": {
+    "1": 0.15000000000000002,
+    "2": 0.16874999999999996,
+    "3": 0.0,
+    "4": 0.09999999999999998,
+    "5": 0.31875,
+    "6": 0.043749999999999956,
+    "7": -0.012499999999999956,
+    "8": 0.08750000000000002,
+    "9": 0.15000000000000002,
+    "10": 0.14375,
+    "11": 0.25,
+    "12": 0.08750000000000002,
+    "13": -0.006249999999999978,
+    "14": -0.012499999999999956,
+    "15": 0.17500000000000004,
+    "16": 0.3,
+    "17": 0.21875,
+    "18": -0.08750000000000002,
+    "19": -0.09375,
+    "20": -0.09375,
+    "21": -0.018750000000000044,
+    "22": 0.20625000000000004,
+    "23": -0.043749999999999956,
+    "24": 0.0625
+  },
+  "speakers_improved": 15,
+  "speakers_worse": 8,
+  "speakers_unchanged": 1,
+  "speaker_sign_test_p": 0.21003961563110352,
+  "speaker_wilcoxon_p": 0.005890284031716427,
+  "runtime_seconds": 124
+}

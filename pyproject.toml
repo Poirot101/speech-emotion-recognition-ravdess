@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-emotion-recognition"
+version = "1.0.0"
+description = "Recognise emotion in speech from MFCC/chroma/mel features with a scikit-learn MLP, on the RAVDESS dataset."
+readme = "README.md"
+requires-python = ">=3.12"  # librosa 1.0 requires 3.12+
+license = "MIT"
+keywords = ["speech-emotion-recognition", "librosa", "ravdess", "mfcc", "scikit-learn", "audio"]
+dependencies = [
+    "librosa>=1.0.0",
+    "soundfile>=0.13",
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+    "joblib>=1.4",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pandas>=2.2", "jupyterlab>=4.0"]
+# The interactive app: pip install -e ".[app]", then streamlit run app/streamlit_app.py
+app = ["streamlit>=1.63"]  # the version the app was tested on; it uses audio_input(sample_rate=...)
+
+[project.scripts]
+ser-train = "speech_emotion.train:main"
+ser-predict = "speech_emotion.predict:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 90
+src = ["src", "tests"]
